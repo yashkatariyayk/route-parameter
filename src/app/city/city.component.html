@@ -1,0 +1,8 @@
+<h3>
+  Department List
+</h3>
+<ul class="items">
+  <li *ngFor="let city of cities" [class.selected]="isSelected(city)" (click)="onSelect(city)">
+    <span class="badge">{{city.id}}</span> {{city.name}}
+  </li>
+</ul>
